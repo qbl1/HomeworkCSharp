@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rA4n1nnKvAtVTYPiQTkILvUHggxjCQElArWeAwAuLobvkoplcD1i7gnHL/vCo6gJV37z1QY1l6ddwAf8dCGkvw==",
+  "success": true,
+  "projectFilePath": "/home/john/Learning/C#/Homework_001/Homework_001.csproj",
+  "expectedPackageFiles": [
+    "/home/john/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

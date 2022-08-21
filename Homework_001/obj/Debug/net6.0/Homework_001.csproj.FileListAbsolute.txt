@@ -1,0 +1,15 @@
+/home/john/Learning/C#/Homework_001/bin/Debug/net6.0/Homework_001
+/home/john/Learning/C#/Homework_001/bin/Debug/net6.0/Homework_001.deps.json
+/home/john/Learning/C#/Homework_001/bin/Debug/net6.0/Homework_001.runtimeconfig.json
+/home/john/Learning/C#/Homework_001/bin/Debug/net6.0/Homework_001.dll
+/home/john/Learning/C#/Homework_001/bin/Debug/net6.0/ref/Homework_001.dll
+/home/john/Learning/C#/Homework_001/bin/Debug/net6.0/Homework_001.pdb
+/home/john/Learning/C#/Homework_001/obj/Debug/net6.0/Homework_001.csproj.AssemblyReference.cache
+/home/john/Learning/C#/Homework_001/obj/Debug/net6.0/Homework_001.GeneratedMSBuildEditorConfig.editorconfig
+/home/john/Learning/C#/Homework_001/obj/Debug/net6.0/Homework_001.AssemblyInfoInputs.cache
+/home/john/Learning/C#/Homework_001/obj/Debug/net6.0/Homework_001.AssemblyInfo.cs
+/home/john/Learning/C#/Homework_001/obj/Debug/net6.0/Homework_001.csproj.CoreCompileInputs.cache
+/home/john/Learning/C#/Homework_001/obj/Debug/net6.0/Homework_001.dll
+/home/john/Learning/C#/Homework_001/obj/Debug/net6.0/ref/Homework_001.dll
+/home/john/Learning/C#/Homework_001/obj/Debug/net6.0/Homework_001.pdb
+/home/john/Learning/C#/Homework_001/obj/Debug/net6.0/Homework_001.genruntimeconfig.cache
