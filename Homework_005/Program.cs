@@ -13,7 +13,7 @@ int[] Array(int size, int min, int max){
 
 void ShowArray(int[] array){                           // Function for print array
     for(int i = 0; i<array.Length; i++){
-        Console.Write($"{array[i]} ");                 // Output elememets of array
+        Console.Write($"{array[i]} ");                 // Output elemements of array
         }
 }
 
@@ -46,11 +46,11 @@ Console.WriteLine("Введите наименьшее значение масс
 int min = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите наибольшее значение массива ");
 int max = Convert.ToInt32(Console.ReadLine());
-int[] array = Array(size, min, max);                    // Saving a user array
-int[] mplArray = MplArray(array);                           // Saving resulting array
-ShowArray(array);                                       // Print user array
+int[] array = Array(size, min, max);                   // Saving a user array
+int[] mplArray = MplArray(array);                      // Saving resulting array
+ShowArray(array);                                      // Print user array
 Console.WriteLine();
-ShowArray(mplArray);                                    // Print multiply array
+ShowArray(mplArray);                                   // Print multiply array
 Console.WriteLine();
 
 ******************************************************************************************************/
@@ -58,5 +58,120 @@ Console.WriteLine();
 
 
 
+/******************************************************************************************************
+
 // Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. 
 // Напишите программу, которая покажет количество чётных чисел в массиве.
+
+int[] Array(int size){
+    int[] array = new int[size];
+    for (int i = 0; i < size; i++){
+        array[i] = new Random().Next(100, 1000);       // Filling array to tripple numbers
+    }
+    return array;
+}
+
+int HonestNum(int[] array){
+    int res = 0;
+    for (int i = 0; i < array.Length; i++){
+        if (array[i] % 2 == 0) res++;                  // Check honest and increment result if true
+    }
+    return res;
+}
+
+void ShowArray(int[] array){                           // Function for print array
+    for(int i = 0; i<array.Length; i++){
+        Console.Write($"{array[i]} ");                 // Output elemements of array
+        }
+}
+
+Console.WriteLine("Input size array:");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] array = Array(size);
+ShowArray(array);
+Console.WriteLine();
+Console.WriteLine($"Amount honest numbers in array: {HonestNum(array)}");
+
+******************************************************************************************************/
+
+
+
+/******************************************************************************************************
+
+// Задача 36: Задайте одномерный массив, заполненный случайными числами. 
+// Найдите сумму элементов, стоящих на нечётных позициях.
+
+int[] Array(int size){
+    int[] array = new int[size];
+    for (int i = 0; i < size; i++){
+        array[i] = new Random().Next();            // Filling array to tripple numbers
+    }                                              // For testing used small random numbers
+    return array;
+}
+
+int OddElem(int[] array){
+    int res = 0;
+    for (int i = 0; i < array.Length; i++){
+        if (i % 2 != 0) res += array[i];           // Checking to odd element
+    }
+    return res;
+}
+
+void ShowArray(int[] array){                       // Function for print array
+    for(int i = 0; i<array.Length; i++){
+        Console.Write($"{array[i]} ");             // Output elemements of array
+        }
+}
+
+Console.WriteLine("Input size array:");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] array = Array(size);
+ShowArray(array);
+Console.WriteLine();
+Console.WriteLine($"Sum to odd elements: {OddElem(array)}");
+
+******************************************************************************************************/
+
+
+
+
+/******************************************************************************************************
+// Задача 38: Задайте массив вещественных чисел. 
+// Найдите разницу между максимальным и минимальным элементом массива.
+
+double[] Array(int size){
+    double[] array = new double[size];
+    for (int i = 0; i < size; i++){
+        array[i] = new Random().Next(-100, 101);       // Filling array random numbers
+    }
+    return array;
+}
+
+double DiffNum(double[] array){
+    double min = array[0];
+    double max = array[0];
+    double res = 0;
+    for (int i = 0; i < array.Length; i++){
+        if (array[i] < min) min = array[i];            // Filling element of min number.
+        else if (array[i] > max) max = array[i];       // // Filling element of max number.
+    }
+    Console.WriteLine($"Max number in array: {max}");
+    Console.WriteLine($"Min number in array: {min}");
+    res = max - min;                                   // Calculation difference between max and min.
+    return res;
+}
+
+void ShowArray(double[] array){                        // Function for print array
+    for(int i = 0; i < array.Length; i++){
+        Console.Write($"{array[i]} ");                 // Output elemements of array
+        }
+}
+
+Console.WriteLine("Input size array:");
+int size = Convert.ToInt32(Console.ReadLine());
+double[] array = Array(size);
+ShowArray(array);
+Console.WriteLine();
+Console.WriteLine($"Difference between max and min array numbers: {DiffNum(array)}"); // Output result.
+
+******************************************************************************************************/
