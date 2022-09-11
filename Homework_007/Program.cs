@@ -6,7 +6,7 @@
 //     double[,] array = new double[m,n];
 //     for(int i = 0; i < m; i++){
 //         for(int j = 0; j < n; j++){
-//             array[i,j] = new Random().NextDouble() * 10; // * (0 - 10) + 10;
+//             array[i,j] = new Random().NextDouble() * 10; // Filling an array with double type numbers
 //         }
 //     }
 //     return array;
@@ -15,7 +15,7 @@
 // void Show2dArray(double[,] array){
 //     for(int i = 0; i < array.GetLength(0); i++){
 //         for(int j = 0; j < array.GetLength(1); j++){
-//             Console.Write(Math.Round(array[i,j], 1) + "  ");
+//             Console.Write(Math.Round(array[i,j], 1) + "  "); // Round numbers before condition
 //         }
 //         Console.WriteLine();
 //         Console.WriteLine();
@@ -39,12 +39,12 @@
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
 
 // void MainArray(int i, int j, int[,] array){
-//     if(i < array.GetLength(0) && j < array.GetLength(1))
-//         Console.WriteLine($"Array[{i},{j}] = {array[i,j]}");
-//     else Console.WriteLine($"Array[{i},{j}] doesn't exist!");
+//     if(i < array.GetLength(0) && j < array.GetLength(1))          // check element is in an array
+//         Console.WriteLine($"Array[{i},{j}] = {array[i,j]}");      // output if element is in an array
+//     else Console.WriteLine($"Array[{i},{j}] doesn't exist!");     // output if element is not in an array
 // }
 
-// int[,] array = {{2, 4, 5, 7, 6},
+// int[,] array = {{2, 4, 5, 7, 6},                                  // stock array
 //                 {3, 3, 9, 0, 1},
 //                 {5, 0, 3, 2, 7},
 //                 {9, 8, 2, 1, 0},
@@ -65,17 +65,17 @@
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое 
 // элементов в каждом столбце.
 
-// int[,] Array2D(int m, int n){
+// int[,] Array2D(int m, int n){                            // method of initial 2D array
 //     int[,] array = new int[m,n];
 //     for(int i = 0; i < m; i++){
 //         for(int j = 0; j < n; j++){
-//             array[i,j] = new Random().Next(1,10);
+//             array[i,j] = new Random().Next(1,10);        // random filling array with user option
 //         }
 //     }
 //     return array;
 // }
 
-// void Show2dArray(int[,] array){
+// void Show2dArray(int[,] array){                          // method of show 2D array
 //     for(int i = 0; i < array.GetLength(0); i++){
 //         for(int j = 0; j < array.GetLength(1); j++){
 //             Console.Write(array[i,j] + " ");
@@ -84,22 +84,22 @@
 //     }
 // }
 
-// double[] ArrayResult(int[,] array){
+// double[] ArrayResult(int[,] array){                      // method of init result array
 //     double sum = 0;
 //     int m = array.GetLength(0);
 //     int n = array.GetLength(1);
 //     double[] ArrayResult = new double[n];
 //     for(int j = 0; j < n; j++){
 //         for(int i = 0; i < m; i++){
-//             sum += array[i,j];
+//             sum += array[i,j];                                       // sum columns
 //         }
-//         ArrayResult[j] = Math.Round((Convert.ToDouble(sum/m)), 1);
+//         ArrayResult[j] = Math.Round((Convert.ToDouble(sum/m)), 1);   // find averge of double numbers 
 //         sum = 0;
 //     }
 //     return ArrayResult;
 // }
 
-// void ShowArray(double[] array){
+// void ShowArray(double[] array){                          // method of show Array
 //     Console.Write("[");
 //     for(int i = 0; i < array.Length - 1; i++)
 //         Console.Write(array[i] + "; ");
@@ -112,7 +112,7 @@
 // Console.Write("Input n: ");
 // int n = Convert.ToInt32(Console.ReadLine());
 
-// if (m > 0 && n > 0){
+// if (m > 0 && n > 0){                                     // validation user input (fool protect)
 //     int[,] array2d = Array2D(m,n);
 //     Console.WriteLine();
 //     Console.WriteLine("User's 2D array:");
